@@ -1,0 +1,53 @@
+# =========================
+# General root ignore rules
+# =========================
+.DS_Store
+*.log
+*.local
+.env
+.vscode/
+.idea/
+
+# =========================
+# Frontend-specific ignores
+# =========================
+Frontend/node_modules/
+Frontend/dist/
+Frontend/dist-ssr/
+Frontend/logs/
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+Frontend/pnpm-debug.log*
+Frontend/lerna-debug.log*
+
+# Editor files in Frontend
+Frontend/.vscode/*
+!Frontend/.vscode/extensions.json
+Frontend/.idea/
+Frontend/*.suo
+Frontend/*.ntvs*
+Frontend/*.njsproj
+Frontend/*.sln
+Frontend/*.sw?
+
+# =========================
+# Backend-specific ignores
+# =========================
+Backend/node_modules/
+Backend/logs/
+Backend/npm-debug.log*
+Backend/yarn-debug.log*
+Backend/yarn-error.log*
+Backend/pnpm-debug.log*
+Backend/lerna-debug.log*
+
+# Editor files in Backend
+Backend/.vscode/
+Backend/.idea/
+Backend/*.suo
+Backend/*.ntvs*
+Backend/*.njsproj
+Backend/*.sln
+Backend/*.sw?
+Backend/.env
