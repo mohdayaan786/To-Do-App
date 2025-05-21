@@ -51,3 +51,4 @@ Backend/*.njsproj
 Backend/*.sln
 Backend/*.sw?
 Backend/.env
+.vercel
