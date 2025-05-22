@@ -5,10 +5,10 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-const connect = require('./config/server-config');
+const connect = require('./src/config/server-config');
 const port = process.env.PORT;
 const app = express();
-const ApiRoutes = require('./routes/index');
+const ApiRoutes = require('./src/routes/index');
 
 app.use(cors());
 app.use(bodyParser.json());
