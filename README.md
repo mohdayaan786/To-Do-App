@@ -11,8 +11,8 @@ A beautiful and minimal full-stack **To-Do List** application built with:
 
 ## 🔗 Live Demo
 
-- **Frontend**: [https://your-frontend.vercel.app](https://your-frontend.vercel.app)
-- **Backend API**: [https://your-backend.onrender.com/tasks](https://your-backend.onrender.com/tasks)
+- **Frontend**: [https://to-do-app-pk3z.vercel.app/](https://to-do-app-pk3z.vercel.app/)
+- **Backend API**: [https://to-do-app-si1y.onrender.com/tasks](https://to-do-app-si1y.onrender.com/tasks)
 
 ---
 
