@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 function CreateTodo() {
     const [tasks, setTasks] = useState([]);
@@ -8,7 +9,7 @@ function CreateTodo() {
     // Fetch tasks from backend
     const fetchTasks = async () => {
         try {
-            const res = await axios.get('http://localhost:3000/api/v1/tasks');
+            const res = await axios.get(`${backendUrl}/api/v1/tasks`);
             setTasks(res.data);
         } catch (err) {
             console.error('Error fetching tasks:', err);
@@ -23,7 +24,7 @@ function CreateTodo() {
     const addTask = async () => {
         if (input.trim()) {
             try {
-                const res = await axios.post('http://localhost:3000/api/v1/tasks', {
+                const res = await axios.post(`${backendUrl}/api/v1/tasks`, {
                     text: input,
                 });
                 setTasks([...tasks, res.data]);
@@ -37,7 +38,7 @@ function CreateTodo() {
     // Remove a task
     const removeTask = async (id) => {
         try {
-            await axios.delete(`http://localhost:3000/api/v1/tasks/${id}`);
+            await axios.delete(`${backendUrl}/api/v1/tasks/${id}`);
             setTasks(tasks.filter((task) => task._id !== id));
         } catch (err) {
             console.error('Error deleting task:', err);
